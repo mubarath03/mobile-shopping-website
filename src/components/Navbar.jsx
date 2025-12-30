@@ -11,6 +11,7 @@ export default function Navbar() {
       </div>
 
       <div className="nav-actions">
+
         <Link to="/login">Login</Link>
         <Link to="/orders">Orders</Link>
         <Link to="/cart">Cart</Link>

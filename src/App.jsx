@@ -21,6 +21,7 @@ function App() {
       <CartProvider>
         
           <Navbar/>
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
@@ -32,6 +33,7 @@ function App() {
             <Route path="/success" element={<OrderSuccess />} />
             <Route path="/orders" element={<Orders />} />
           </Routes>
+          <Home/>
           <Footer/>
       </CartProvider>
     </AuthProvider>

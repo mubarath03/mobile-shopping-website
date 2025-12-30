@@ -19,9 +19,8 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <BrowserRouter>
+        
           <Navbar/>
-          <Home/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
@@ -34,7 +33,6 @@ function App() {
             <Route path="/orders" element={<Orders />} />
           </Routes>
           <Footer/>
-        </BrowserRouter>
       </CartProvider>
     </AuthProvider>
   );
